@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="css/signup.css" />
+  </head>
+  <body>
+    <a href="signup.php">Login</a>
+    <div class="signup-box">
+      <h2>Signup</h2>
+      <?php if (isset($error)) { ?>
+      <p class="error"><?php echo $error; ?></p>
+      <?php } ?>
+      <form method="POST" action="">
+        <div class="user-box">
+          <input type="text" name="username" required />
+          <label>Username</label>
+        </div>
+        <div class="user-box">
+          <input type="email" name="email" required />
+          <label>Email</label>
+        </div>
+        <div class="user-box">
+          <input type="password" name="password" required />
+          <label>Password</label>
+        </div>
+        <div class="user-box">
+          <input type="password" name="confirm_password" required />
+          <label>Confirm Password</label>
+        </div>
+        <button type="submit" name="signup">
+          <a href="home.html"></a>Signup
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
